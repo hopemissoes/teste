@@ -1,0 +1,1 @@
+badCostumer = new Meteor.Collection('badCostumer');

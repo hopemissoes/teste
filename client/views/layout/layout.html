@@ -1,0 +1,16 @@
+<template name="layout">
+{{> header}}	
+	{{#if currentUser}}
+		<section class="col-sm-12">
+			
+			{{> yield}}
+			
+		</section>
+	{{else}}
+		<div class="text-center">
+			<h3>Chef Chen</h3>
+			<h5>Are you logged in? Click in "Sign In/Up".</h5>
+		</div>
+	{{/if}}
+{{> footer3}}
+</template>

@@ -1,0 +1,40 @@
+<template name="badCostumer">
+                                            
+<div class="col-md-9 col-sm-12 col-xs-12">
+                    <div class="panel panel-danger ">
+                        <div class="panel-heading text-center ">
+                           Summary of Bastards !
+                        </div>
+                        <div class="panel-body panel panel-back noti-box panel-danger">
+                            <div class="table-responsive panel panel-back noti-box panel-danger">
+                                <table class="table table-striped table-bordered table-hover" >
+                                    <thead >
+                                        <tr >
+                                            <th class="text-center ">Bastard's Name</th>
+                                            <th class="text-center ">Bastard's Adress</th>
+                                            <th class="text-center ">Bastard's Observation</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center " id="myTable">
+                                    {{#each badCostumer}}
+                                        <tr >
+                                            <td class="text-center ">{{CostumerName}}</td>
+                                            <td class="text-center ">{{CostumerAdress}}</td>
+                                            <td class="text-center ">{{CostumerObservation}}</td>
+                                        </tr>
+                                    {{/each}}
+                                   </tbody> 
+                                    
+                                    
+                                </table> 
+                            </div> 
+
+                        </div>
+
+                    </div>
+
+                    
+                </div>           
+             
+</template>

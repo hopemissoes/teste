@@ -1,0 +1,59 @@
+<template name = "otherDays">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Check every day in the month </h4>
+                       
+                    </div>
+                </div>
+                 <!-- /. ROW  -->
+                 <hr />
+                                 
+            <div class="row">
+            	<div class="col-xs-3 col-sm-3">
+            	</div>
+                <div class="col-xs-6 col-sm-6">
+                	<a type="button" id="days-box" class="navbar-toggle btn btn-danger pull-center" >Insert Days</a>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading text-center">
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive ">
+                                <table class="table table-striped table-bordered table-hover panel panel-back noti-box panel-danger" >
+                                    <thead >
+                                        <tr >
+                                            <th class="text-center ">Order</th>
+                                            <th class="text-center ">Fee</th>
+                                            <th class="text-center ">Tips</th>
+                                            <th class="text-center ">Cash</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody class="text-center " id="myTable">
+                                    {{#with otherDays}}
+                                      {{#each otherDays2}}
+
+                                        <tr >
+                                            <td class="text-center ">{{orderNumber}}</td>
+                                            <td class="text-center ">{{fee}}</td>
+                                            <td class="text-center ">{{tips}}</td>
+                                            <td class="text-center ">{{cash}}</td>
+                                        </tr>
+                                        {{/each}}
+                                    {{/with}}
+                                   </tbody> 
+                                </table> 
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3">
+            			</div>
+                        </div>
+
+
+                        
+            
+
+        
+
+</template>
